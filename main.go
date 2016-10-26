@@ -191,7 +191,8 @@ func awss3(w http.ResponseWriter, r *http.Request) {
 	}
 	obj, err := s3get(c.s3Bucket, c.s3KeyPrefix+path)
 	if err != nil {
-		http.Error(w, err.Error(), http.StatusInternalServerError)
+//		http.Error(w, err.Error(), http.StatusInternalServerError)
+		http.Redirect(w, r, "index.html", http.StatusOK)
 		return
 	}
 	if len(c.httpCacheControl) > 0 {
