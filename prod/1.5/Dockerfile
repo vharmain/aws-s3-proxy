@@ -13,7 +13,7 @@ RUN apk add --no-cache ca-certificates \
       && apk --no-cache add --virtual build-dependencies go git \
       && mkdir -p /go/src /go/bin \
       && chmod -R 777 /go \
-      && go get -u github.com/pottava/aws-s3-proxy \
+      && go get -u github.com/vharmain/aws-s3-proxy \
       && apk del --purge build-dependencies \
       && rm -rf /go/pkg /go/src
 
