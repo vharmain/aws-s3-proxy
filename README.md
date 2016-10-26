@@ -1,4 +1,6 @@
-# Reverse proxy for AWS S3 w/ basic authentication
+# Reverse proxy for AWS S3 w/ basic authentication 
+
+Forked from https://hub.docker.com/r/pottava/s3-proxy/ The difference is that this fork attempts to be more HTML5-routing friendly with rewrites to index.html whenever necessary.  
 
 [![](https://badge.imagelayers.io/pottava/s3-proxy:latest.svg)](https://imagelayers.io/?images=pottava/s3-proxy:latest 'Get your own badge on imagelayers.io')
 
